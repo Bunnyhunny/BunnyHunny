@@ -1,0 +1,11 @@
+unzip safecast.zip
+hdfs dfs -mkdir radiation
+hdfs dfs -mkdir radiation/data
+hdfs dfs -mkdir radiation/data/masterfile
+hdfs dfs -ls radiation
+hdfs dfs -chmod -R o+w radiation/
+
+
+Radiation Dataset link: https://www.kaggle.com/safecast/safecast
+
+hdfs dfs -put measurements.csv radiation/data/masterfile
